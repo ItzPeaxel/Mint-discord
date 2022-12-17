@@ -1,6 +1,7 @@
 package dev.peaxel.mintdiscord;
 
 import com.github.shyiko.dotenv.DotEnv;
+import dev.peaxel.mintdiscord.events.LoggingEvents;
 import dev.peaxel.mintdiscord.events.ReadyEvents;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -37,6 +38,7 @@ public class Mint {
 
     private static void addListeners(JDABuilder builder){
         builder.addEventListeners(new ReadyEvents());
+        builder.addEventListeners(new LoggingEvents());
     }
 
     private static void loadDotEnv(){
