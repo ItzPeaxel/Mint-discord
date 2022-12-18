@@ -60,8 +60,4 @@ public class Mint {
     public static JDA getInstance() {
         return instance;
     }
-
-    public static GuildManager getGuildManager(){
-        return instance.getGuilds().get(0).getManager();
-    }
 }
