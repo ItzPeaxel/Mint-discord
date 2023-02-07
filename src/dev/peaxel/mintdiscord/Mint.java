@@ -26,7 +26,7 @@ public class Mint {
 
         JDABuilder b = JDABuilder.create(dotEnvMap.get("token").toString(), EnumSet.allOf(GatewayIntent.class))
                 .enableCache(EnumSet.allOf(CacheFlag.class))
-                .setActivity(Activity.watching("t.tv/asaniiart"))
+                .setActivity(Activity.watching("Je suis Mint !"))
                 .setStatus(OnlineStatus.ONLINE);
 
         addListeners(b);
